@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    body {
+     
+    background-color: palevioletred;
+    background-image: url("desktop.png");
+    }
+    .forms {
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      margin:10px auto;
+      width:400px;
+      border:1px solid #CCC;
+      border-radius:0.50em;
+      padding:50px;
+      margin-right:200px;
+      background-color: white;
+    }
+
+    a {
+      
+    color:palevioletred;
+    }
+   .rightlandpage {
+    float:left;
+    width:50%
+   }
+   .leftlandpage {
+     float:left;
+     width:50%
+
+   }
+.trial {
+  padding-top:15px;
+  padding-bottom: 15px;
+  padding-right:50px;
+  padding-left: 50px;
+  display:flex;
+  justify-content: center;
+  margin:10px auto;
+  width:400px;
+  text-align:center;
+  border-radius:0.50em;
+  border:1px solid #CCC;
+  margin-right:200px;
+  margin-top:100px;
+  background-color: rgb(82, 48, 105);
+  color:white;
+
+}
+    .body1 {
+      width:400px;
+      margin-left:300px;
+      margin-top:300px;
+    }
+    
+    .learn1 {
+
+      font-size:50px;
+      color:white;
+    }
+    .learn2 {
+      font-size:15px;
+      color:white;
+      
+
+    }
+    
+#First_Name {
+  margin:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
+}
+#Last_Name {
+  margin:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
+}
+#email {
+  margin:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
+}
+#pass {
+  margin:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
+}
+#claim {
+  margin:10px;
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-left:5px;
+  padding-right:5px;
+  background-color:rgb(88, 170, 88);
+  color:white;
+}
+
+    .footer {
+      position: absolute;
+    bottom: 30px;
+    width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="leftlandpage">
+ <div class="body1">
+
+  <h2 class="learn1">Learn to code by watching others</h2> 
+  <h2 class="learn2">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </h2>
+</div>
+</div>
+
+<div class="rightlandpage">
+ <div class="trial">
+ <bold> Try it free </bold> 7 days then $20/mo. thereafter
+ </div>
+
+  <div class="forms">
+  <FORM Action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data"></FORM>
+  <label for="first"> First Name:</label>
+  <input type="text" id="First_Name" name="First Name" placeholder="Your First name">
+  
+  <label for="last"> Last Name:</label>
+  <input type="text" id="Last_Name" name="Last Name" placeholder="Your Last name">
+
+  <label for=email> Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="Email Address" required>
+  <label for="pass">Password (8 characters minimum):</label>
+  <input type="password" id="pass" name="password" placeholder="Password"
+   minlength="8" required>
+
+   <button type="button" id="claim"> <bold> CLAIM YOUR FREE TRIAL </bold> </button>
+   
+   <small>By clicking the button, you are agreeing to our <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" > Terms and Services</a>  </small>
+   </div>
+</div>
+
+  
+
+  <div class="footer">
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</div>
+</body>
+</html>
